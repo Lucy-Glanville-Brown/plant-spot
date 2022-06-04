@@ -17,26 +17,14 @@
                 Plant Type
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Succulents &amp; Cacti </a>
-                <a href="" class="dropdown-item">Indoor Plants</a>
-                <a href="" class="dropdown-item">Air Purifying</a>
-                <a href="" class="dropdown-item">Pet Friendly</a>
-                <a href="" class="dropdown-item">Trailing</a>
-                <a href="" class="dropdown-item">Patterned &amp; Colourful</a>
-                <a href="" class="dropdown-item">Flowering</a>
-                <a href="" class="dropdown-item">All Plant Types</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=succulents_cacti" class="dropdown-item">Succulents &amp; Cacti </a>
+                <a href="{% url 'products' %}?category=indoor_plants" class="dropdown-item">Indoor Plants</a>
+                <a href="{% url 'products' %}?category=air_purifying" class="dropdown-item">Air Purifying</a>
+                <a href="{% url 'products' %}?category=pet_friendly" class="dropdown-item">Pet Friendly</a>
+                <a href="{% url 'products' %}?category=trailing" class="dropdown-item">Trailing</a>
+                <a href="{% url 'products' %}?category=patterned_colourful" class="dropdown-item">Patterned &amp; Colourful</a>
+                <a href="{% url 'products' %}?category=flowering" class="dropdown-item">Flowering</a>
+                <a href="{% url 'products' %}?category=succulents_cacti,indoor_plants,air_purifying,trailing,patterned_colourful,flowering" class="dropdown-item">All Plant Types</a>
             </div>
         </li>
     </ul>

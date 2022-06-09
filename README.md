@@ -2,22 +2,39 @@
 
 ## Portfolio Project 5 - Code Institute
 
-## UX
+## Table of contents
+1. [UX](#ux)
+    * [User Stories](#userstories)
+    * [Stategy](#strategy)
+    * [Scope](#scope)
+    * [Structure](#structure)
+    * [Skeleton](#skeleton)
+    * [Surface](#surface)
 
-### User Stories
+2. [Technologies](#technologies)
+3. [Features](#features)
+4. [Testing](#testing)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
+7. [Acknowledgements](#acknowledgements)
+
+
+## UX <a name="ux"></a>
+
+### User Stories <a name="userstories"></a>
 
 
 I used GitHub Projects to create a Kanban board to manage the planning and implementation of the functionality I wanted to include in this project. Click [here](https://github.com/users/Lucy-Glanville-Brown/projects/5/views/2) to see my project board.
 
-### Strategy
+### Strategy <a name="strategy"></a>
 
-### Scope
+### Scope <a name="scope"></a>
 
-### Structure
+### Structure <a name="structure"></a>
 
-### Skeleton
+### Skeleton <a name="skeleton"></a>
 
-### Surface
+### Surface <a name="surface"></a>
 
 #### Images
 
@@ -25,7 +42,7 @@ I used GitHub Projects to create a Kanban board to manage the planning and imple
 
 #### Typography
 
-## Technologies
+## Technologies <a name="technologies"></a>
 
 ### Languages
 
@@ -47,13 +64,13 @@ I used GitHub Projects to create a Kanban board to manage the planning and imple
 * Stripe Payments
 * Summernote
 
-## Features
+## Features <a name="features"></a>
 
 ### Existing Features
 
 ### Future Features
 
-## Testing
+## Testing <a name="testing"></a>
 
 ### Bugs
 
@@ -67,7 +84,7 @@ I used GitHub Projects to create a Kanban board to manage the planning and imple
 
 * PEP8
 
-## Deployment
+## Deployment <a name="deployment"></a>
 
 ### Deploying on Heroku
 
@@ -90,6 +107,6 @@ How to run this project locally:
 * Locate the GitHub Repository.
 * Click the green "GitPod" button in the top right corner of the repository. This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
 
-## Credits
+## Credits <a name="credits"></a>
 
-## Acknowledgements
+## Acknowledgements <a name="acknowledgements"></a>

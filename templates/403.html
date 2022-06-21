@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+    403
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="container justify-content-center">
+        <div class="row">
+            <div class="col my-4 text-center">
+                <hr>
+                <h2>Error 403</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <h3 class="mt-2 mb-4 red">Oops!</h3>
+                <p class="red my-4">Sorry you do not have permission to access this page.</p>
+                <a href="/" class="btn btn-green mb-5">Click here to head back to Plant Spot!</a>
+                <a href="/" mt-3>
+                    <img src="{{ MEDIA_URL }}logo.png" alt="Plant Spot Logo" class="w-50">
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

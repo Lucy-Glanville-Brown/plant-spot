@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_title %}
-    500
+    403
 {% endblock %}
 
 {% block page_header %}
@@ -18,17 +18,16 @@
         <div class="row">
             <div class="col my-4 text-center">
                 <hr>
-                <h2>Error 500</h2>
+                <h2>Error 403</h2>
                 <hr>
             </div>
         </div>
         <div class="row pb-5">
             <div class="col-12 col-md-6 offset-md-3 text-center">
                 <h3 class="mt-2 mb-4 red">Oops!</h3>
-                <p class="red my-4">Something went wrong here!</p>
-                <a href="/" class="btn btn-green mb-5">Click here to head back to Plant Spot!</a>
-                <a href="/" mt-3>
-                    <img src="{{ MEDIA_URL }}logo.png" alt="Plant Spot Logo" class="w-50">
+                <p class="red my-4">Sorry you do not have permission to access this page.</p>
+                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
+                    Return to shop
                 </a>
             </div>
         </div>

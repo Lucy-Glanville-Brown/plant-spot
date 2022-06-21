@@ -30,7 +30,7 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 220px;
 }
 
 .btn-black {
@@ -104,6 +104,12 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.jumbotron {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 /* ------------------------------- bootstrap toasts */

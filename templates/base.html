@@ -150,6 +150,34 @@
       {% block content %}
       {% endblock %}
 
+  <!-- Footer -->
+  <footer class="container-wrapper">
+    {% include 'includes/mobile-footer.html' %}
+    {% include 'includes/main-footer.html' %}
+    <!-- Copyright -->
+    <div class="row">
+      <div class="col">
+          <div class="row">
+              <div class="col small ml-4 text-black text-center">
+                  <span>
+                      &copy; Copyright<span id=copyright></span> | Plant Spot | 
+                  </span>
+                  <span class="d-none d-md-inline-block">Developed by: Lucy Glanville-Brown </span>   
+                  <a href="#" class="text-decoration-none" target="_blank" rel="noopener">
+                      <i class="fab fa-github fa-lg ml-1 text-black" aria-hidden="true"></i>
+                      <span class="sr-only">GitHub</span>
+                  </a>
+                  <a href="#" class="text-decoration-none" target="_blank" rel="noopener">
+                      <i class="fab fa-linkedin fa-lg ml-1 text-black" aria-hidden="true"></i>
+                      <span class="sr-only">linkedin</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+  <!-- /.footer -->
+
       {% block postloadjs %}
       <script type="text/javascript">
         $('.toast').toast('show');

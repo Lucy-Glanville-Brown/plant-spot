@@ -91,6 +91,46 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
+                    <!-- Displays all reviews -->
+                    <div class="row mt-4">
+                        <div class="col mt-4">
+                            {% if reviews %}
+                                <h4>Product Reviews ({{ reviews.count }})</h4>
+                            {% else %}
+                                <h4>Product Reviews (0)</h4>
+                                <p class="mt-2">
+                                    There's no reviews for {{ product.name }} at the moment.
+                                </p>
+                            {% endif %}                            
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col">
+                                {% for review in reviews %}
+                                <p>User: {{ review.user }}</p>
+                                <p>Date: {{ review.created_on }}</p>
+                                <p>Comments: {{ review.comment }}</p>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                        {% if reviews_by_user %}
+                        <div class="col">
+                            <h6>You have left a review already - thank you</h6>
+                        </div>
+                        <br>
+                        {% else %}
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                {% if request.user.is_authenticated %}
+                                <a href="{% url 'add_review' product.id %}" class="btn btn-black rounded-0 text-uppercase">Add a Review</a>
+                                {% else %}
+                                <h6>You must be logged in to leave a review</h6>
+                                {% endif %}
+                            </div>
+                        </div>                        
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>

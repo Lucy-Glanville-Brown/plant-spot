@@ -38,6 +38,17 @@ body {
     color: white;
 }
 
+.btn-primary {
+    background: #0051A8;
+    color: white;
+}
+
+.btn-primary,
+.btn-danger {
+    font-size: 85%;
+    text-transform: uppercase;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
@@ -63,6 +74,10 @@ body {
 
 .text-black {
     color: #000 !important;
+}
+
+.text-info {
+    color: #265E5A !important;
 }
 
 .border-black {

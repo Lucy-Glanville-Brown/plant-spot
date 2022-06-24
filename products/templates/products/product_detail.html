@@ -44,8 +44,8 @@
                     {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            <a href="{% url 'edit_product' product.id %}" class="btn btn-primary rounded">Edit</a> | 
+                            <a class="btn btn-danger rounded" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
@@ -93,7 +93,7 @@
                     </form>
                     <!-- Displays all reviews -->
                     <div class="row mt-4">
-                        <div class="col mt-4">
+                        <div class="col mt-4">                            
                             {% if reviews %}
                                 <h4>Product Reviews ({{ reviews.count }})</h4>
                             {% else %}
@@ -107,11 +107,10 @@
                         <div class="row">
                             <div class="col">
                                 {% for review in reviews %}
-                                <p>User: {{ review.user }}</p>
-                                <p>Date: {{ review.created_on }}</p>
-                                <p>Comments: {{ review.comment }}</p>
+                                    <p>User: {{ review.user }}</p>
+                                    <p>Date: {{ review.created_on }}</p>
+                                    <p>Comments: {{ review.comment }}</p>
                                 {% endfor %}
-
                             </div>
                         </div>
                         {% if reviews_by_user %}
@@ -121,9 +120,17 @@
                         <br>
                         {% else %}
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4">
+                            <div class="col">
                                 {% if request.user.is_authenticated %}
-                                <a href="{% url 'add_review' product.id %}" class="btn btn-black rounded-0 text-uppercase">Add a Review</a>
+                                <div class="container-fluid">
+                                    <div class="row mt-4 ml-4">
+                                        <div class="col">
+                                            {% if request.user.is_authenticated %}                                            
+                                            <!-- {% include "reviews/add_review.html" %} -->
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
                                 {% else %}
                                 <h6>You must be logged in to leave a review</h6>
                                 {% endif %}

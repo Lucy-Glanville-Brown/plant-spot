@@ -205,7 +205,12 @@ footer {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+    border-radius: 3px;
   }
+
+#mc_embed_signup .button {
+    background-color: #000 !important;    
+}
 
 /* -------------------------------- Media Queries */
 

@@ -200,6 +200,13 @@ footer {
     overflow-y: auto;
 }
 
+/* Mailchimp */
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+  }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

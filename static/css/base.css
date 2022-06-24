@@ -70,7 +70,7 @@ body {
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #265E5A !important;
 }
 
 .overlay {
@@ -113,8 +113,8 @@ input[name='q']::placeholder {
 }
 
 footer {
-    background-color: #fff;
-    color: #000;
+    background-color: #265E5A;
+    color: #fff;
 }
 
 /* ------------------------------- bootstrap toasts */

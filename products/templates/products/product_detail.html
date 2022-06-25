@@ -96,6 +96,7 @@
                         <div class="col mt-4">                            
                             {% if reviews %}
                                 <h4>Product Reviews ({{ reviews.count }})</h4>
+                                <hr>
                             {% else %}
                                 <h4>Product Reviews (0)</h4>
                                 <p class="mt-2">
@@ -107,9 +108,11 @@
                         <div class="row">
                             <div class="col">
                                 {% for review in reviews %}
-                                    <p>User: {{ review.user }}</p>
+                                    <p>User: {{ review.user_profile }}</p>
                                     <p>Date: {{ review.created_on }}</p>
+                                    <p>Rating: {{ review.stars }}</p>
                                     <p>Comments: {{ review.comment }}</p>
+                                    <hr>
                                 {% endfor %}
                             </div>
                         </div>
@@ -121,16 +124,10 @@
                         {% else %}
                         <div class="row">
                             <div class="col">
-                                {% if request.user.is_authenticated %}
-                                <div class="container-fluid">
-                                    <div class="row mt-4 ml-4">
-                                        <div class="col">
-                                            {% if request.user.is_authenticated %}                                            
-                                            <!-- {% include "reviews/add_review.html" %} -->
-                                            {% endif %}
-                                        </div>
-                                    </div>
-                                </div>
+                                {% if request.user.is_authenticated %}                                
+                                    {% if request.user.is_authenticated %}                                            
+                                    {% include "reviews/add_review.html" %}
+                                    {% endif %}                                    
                                 {% else %}
                                 <h6>You must be logged in to leave a review</h6>
                                 {% endif %}

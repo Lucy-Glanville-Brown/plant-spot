@@ -170,6 +170,50 @@ Finally I used the WebAIM contrast checker to find the right shade of green whic
 
 ### Existing Features
 
+**Navigation & Header**
+
+* **Logo** - The Plant Spot Logo is linked to the homepage so when clicking on it will take the user back to the homepage
+* **Search Bar** -  The search bar is coded to display the results of the user's search request, using the product name and description as parameters
+* **User Icon** - There is an icon for the user options. The user icon's dropdown selection is updated depending on whether the user is logged in, logged out, or if they a logged in as a superuser. The options are Register and Login if not signed in, My Profile and Logout is signed in and if the user is a Superuser they will be able to see Product Management.
+* **Shopping Bag Icon** - There is an icon for the shopping bag which will show the current bag total if you have items in your bag.
+* **Link to All Products** - On the second row there is a link to All Products where you can select products By Price, By Rating, By Category or view All Products.
+* **Link to Plant Type** - On the second row there is also a link to Plant Types where you can select products by their category Succulents & Cacti, Indoor Plants, Air Purifying, Pet Friendly, Trailing, Patterned & Colourful, Flowering or All Plant Types.
+* **Link to Contact Us** - There is also a link for Contact Us which will take the user to a contact form to be completed.
+* **Free Delivery Banner** - There is a banner telling the user that there's free delivery on ourders over £50.
+
+**Footer**
+
+Each page of the website features a consistent responsive footer design:
+
+* **Social Media Links** - These links connect the site user to the store's business profile on Facebook, and also the developer's LinkedIn and GitHub profiles.
+* **Newsletter Sign Up** - There is a MailChimp signup form where the user can sign up to the store's newsletter.
+
+**Homepage**
+
+**Products**
+
+**Products Details**
+
+**Shopping Bag**
+
+**Checkout**
+
+**Order Confirmation**
+
+**Profile**
+
+**Add Product**
+
+**Edit Product**
+
+**Contact Us**
+
+**Reviews**
+
+
+
+
+
 ### Future Features
 
 [Back to top ⇧](#)

@@ -89,45 +89,56 @@ Desktop View
 
 The images for Aloe Vera, Peperomia Piccolo, Sansevieria, Zamioculcas, English Ivy, Fiddle Leaf Fig, Calathea, Tradescantia, Croton, Begonia Maculata, Yucca and Asparagus Fren were all found on Pexels
 
-<img src="media/3_Aloe_Vera.jpg" style="height:100px; width:100px;">
-<img src="media/4_Peperomia_Piccolo.jpg" style="height:100px; width:100px;">
-<img src="media/5_Sansevieria.jpg" style="height:100px; width:100px;">
-<img src="media/6_Zamioculcas.jpg" style="height:100px; width:100px;">
-<img src="media/7_English_Ivy.jpg" style="height:100px; width:100px;">
-<img src="media/9_Fiddle_Leaf_Fig.jpg" style="height:100px; width:100px;">
-<img src="media/14_Calathea.jpg" style="height:100px; width:100px;">
-<img src="media/19_Tradescantia.jpg" style="height:100px; width:100px;">
-<img src="media/20_Croton.jpg" style="height:100px; width:100px;">
-<img src="media/21_Begonia_Maculata.jpg" style="height:100px; width:100px;">
-<img src="media/25_Yucca.jpg" style="height:100px; width:100px;">
-<img src="media/26_Asparagus_Fern.jpg" style="height:100px; width:100px;">
+<img src="media/3_Aloe_Vera.jpg" style="height:150px; width:150px;"><img src="media/4_Peperomia_Piccolo.jpg" style="height:150px; width:150px;"><img src="media/5_Sansevieria.jpg" style="height:150px; width:150px;"><img src="media/6_Zamioculcas.jpg" style="height:150px; width:150px;">
+
+<img src="media/7_English_Ivy.jpg" style="height:150px; width:150px;"><img src="media/9_Fiddle_Leaf_Fig.jpg" style="height:150px; width:150px;"><img src="media/14_Calathea.jpg" style="height:150px; width:150px;"><img src="media/19_Tradescantia.jpg" style="height:150px; width:150px;">
+
+<img src="media/20_Croton.jpg" style="height:150px; width:150px;"><img src="media/21_Begonia_Maculata.jpg" style="height:150px; width:150px;"><img src="media/25_Yucca.jpg" style="height:150px; width:150px;"><img src="media/26_Asparagus_Fern.jpg" style="height:150px; width:150px;">
 
 #### Shutterstock
 
 The images for Miranda, Spider Plant, Blue Star Fern, Boston Fern, Chamaedorea, Peperomia Watermelon, Devil's Ivy and Flowering Begonia were all found on Shutterstock.
 
-<img src="media/2_Miranda.jpg" style="height:100px; width:100px;">
-<img src="media/11_Spider_Plant.jpg" style="height:100px; width:100px;">
-<img src="media/13_Blue_Star_Fern.jpg" style="height:100px; width:100px;">
-<img src="media/15_Boston_Fern.jpg" style="height:100px; width:100px;">
-<img src="media/16_Chamaedorea.jpg" style="height:100px; width:100px;">
-<img src="media/17_Peperomia Watermelon.jpg" style="height:100px; width:100px;">
-<img src="media/18_Devils_Ivy.jpg" style="height:100px; width:100px;">
-<img src="media/24_Flowering_Begonia.jpg" style="height:100px; width:100px;">
+<img src="media/2_Miranda.jpg" style="height:150px; width:150px;"><img src="media/11_Spider_Plant.jpg" style="height:150px; width:150px;"><img src="media/13_Blue_Star_Fern.jpg" style="height:150px; width:150px;"><img src="media/15_Boston_Fern.jpg" style="height:150px; width:150px;">
+
+<img src="media/16_Chamaedorea.jpg" style="height:150px; width:150px;"><img src="media/17_Peperomia Watermelon.jpg" style="height:150px; width:150px;"><img src="media/18_Devils_Ivy.jpg" style="height:150px; width:150px;"><img src="media/24_Flowering_Begonia.jpg" style="height:150px; width:150px;">
 
 #### Unsplash
 
 The images for Haworthia, Monstera, Ficus Benjamina, Jungle Orchid, Mini Orchid and the background image of the homepage were all found on Unsplash.
 
-<img src="media/1_Haworthia.jpg" style="height:100px; width:100px;">
-<img src="media/8_Monstera.jpg" style="height:100px; width:100px;">
-<img src="media/10_Ficus_Benjamina.jpg" style="height:100px; width:100px;">
-<img src="media/22_Jungle_Orchid.jpg" style="height:100px; width:100px;">
-<img src="media/23_Mini_Orchid.jpg" style="height:100px; width:100px;">
-<img src="media/homepage_background_cropped.jpg" style="height:100px; width:120px;">
+<img src="media/1_Haworthia.jpg" style="height:150px; width:150px;"><img src="media/8_Monstera.jpg" style="height:150px; width:150px;"><img src="media/10_Ficus_Benjamina.jpg" style="height:150px; width:150px;"><img src="media/22_Jungle_Orchid.jpg" style="height:150px; width:150px;">
+
+<img src="media/23_Mini_Orchid.jpg" style="height:150px; width:150px;"><img src="media/homepage_background_cropped.jpg" style="height:150px; width:230px;">
 
 
 #### Colours
+
+[Adobe Color Extract Theme](https://color.adobe.com/create/image)
+
+The colours were chosen by using Adobe Color Extract Theme from the homepage backgorund image I found on Unsplash. 
+
+<img src="static/media/README/theme_colour_scheme.png" style="height:300px; width:500px;">
+
+[MyColor.Space](https://mycolor.space/)
+
+Using the colors found on Adobe Color Extract Theme I selected the colour palette below from MyColor.Space
+
+<img src="static/media/README/theme_colorspace.png" style="height:200px; width:400px;">
+
+[Contrast Grid - Eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
+
+Once the colours were chosen I used a contrast checker to decide which colour I liked best for the Navbar and Footer with white text.
+
+<img src="static/media/README/theme_contrastgrid.png" style="height:600px; width:600px;">
+
+
+[WebAIM](https://webaim.org/resources/contrastchecker/)
+
+Finally I used the WebAIM contrast checker to find the right shade of green which would pass all accessibility test with white text.
+
+<img src="static/media/README/theme_contrast_checker.png" style="height:500px; width:500px;">
+
 
 #### Typography
 

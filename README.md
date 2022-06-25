@@ -73,9 +73,59 @@ I used GitHub Projects to create a Kanban board to manage the planning and imple
 
 ### Skeleton <a name="skeleton"></a>
 
+The wire frames were created using Balsamiq.
+
+Mobile View
+
+Tablet View
+
+Desktop View
+
 ### Surface <a name="surface"></a>
 
 #### Images
+
+#### Pexels
+
+The images for Aloe Vera, Peperomia Piccolo, Sansevieria, Zamioculcas, English Ivy, Fiddle Leaf Fig, Calathea, Tradescantia, Croton, Begonia Maculata, Yucca and Asparagus Fren were all found on Pexels
+
+<img src="media/3_Aloe_Vera.jpg" style="height:100px; width:100px;">
+<img src="media/4_Peperomia_Piccolo.jpg" style="height:100px; width:100px;">
+<img src="media/5_Sansevieria.jpg" style="height:100px; width:100px;">
+<img src="media/6_Zamioculcas.jpg" style="height:100px; width:100px;">
+<img src="media/7_English_Ivy.jpg" style="height:100px; width:100px;">
+<img src="media/9_Fiddle_Leaf_Fig.jpg" style="height:100px; width:100px;">
+<img src="media/14_Calathea.jpg" style="height:100px; width:100px;">
+<img src="media/19_Tradescantia.jpg" style="height:100px; width:100px;">
+<img src="media/20_Croton.jpg" style="height:100px; width:100px;">
+<img src="media/21_Begonia_Maculata.jpg" style="height:100px; width:100px;">
+<img src="media/25_Yucca.jpg" style="height:100px; width:100px;">
+<img src="media/26_Asparagus_Fern.jpg" style="height:100px; width:100px;">
+
+#### Shutterstock
+
+The images for Miranda, Spider Plant, Blue Star Fern, Boston Fern, Chamaedorea, Peperomia Watermelon, Devil's Ivy and Flowering Begonia were all found on Shutterstock.
+
+<img src="media/2_Miranda.jpg" style="height:100px; width:100px;">
+<img src="media/11_Spider_Plant.jpg" style="height:100px; width:100px;">
+<img src="media/13_Blue_Star_Fern.jpg" style="height:100px; width:100px;">
+<img src="media/15_Boston_Fern.jpg" style="height:100px; width:100px;">
+<img src="media/16_Chamaedorea.jpg" style="height:100px; width:100px;">
+<img src="media/17_Peperomia Watermelon.jpg" style="height:100px; width:100px;">
+<img src="media/18_Devils_Ivy.jpg" style="height:100px; width:100px;">
+<img src="media/24_Flowering_Begonia.jpg" style="height:100px; width:100px;">
+
+#### Unsplash
+
+The images for Haworthia, Monstera, Ficus Benjamina, Jungle Orchid, Mini Orchid and the background image of the homepage were all found on Unsplash.
+
+<img src="media/1_Haworthia.jpg" style="height:100px; width:100px;">
+<img src="media/8_Monstera.jpg" style="height:100px; width:100px;">
+<img src="media/10_Ficus_Benjamina.jpg" style="height:100px; width:100px;">
+<img src="media/22_Jungle_Orchid.jpg" style="height:100px; width:100px;">
+<img src="media/23_Mini_Orchid.jpg" style="height:100px; width:100px;">
+<img src="media/homepage_background_cropped.jpg" style="height:100px; width:120px;">
+
 
 #### Colours
 

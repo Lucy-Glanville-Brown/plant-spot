@@ -149,16 +149,13 @@
 
       {% block page_header %}
       {% endblock %}
-
+    
       {% block content %}
       {% endblock %}
-
-  <!-- Footer -->
-  <footer class="container-wrapper mt-5">
-    {% include 'includes/mobile-footer.html' %}
-    {% include 'includes/main-footer.html' %}    
-  </footer>
-  <!-- /.footer -->
+    
+      <!-- Footer -->
+      {% include 'includes/footer.html' %}
+      <!-- /.footer -->
 
       {% block postloadjs %}
       <script type="text/javascript">

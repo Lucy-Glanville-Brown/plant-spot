@@ -233,6 +233,7 @@ I decided to use ‘Montserrat’ for the Plant Spot branding and ‘Lato’ and
 * **Logo** - The Plant Spot Logo is linked to the homepage so when clicking on it will take the user back to the homepage
 * **Search Bar** -  The search bar is coded to display the results of the user's search request, using the product name and description as parameters
 * **User Icon** - There is an icon for the user options. The user icon's dropdown selection is updated depending on whether the user is logged in, logged out, or if they a logged in as a superuser. The options are Register and Login if not signed in, My Profile and Logout is signed in and if the user is a Superuser they will be able to see Product Management.
+* **Wishlist Icon** - There is an icon for the wishlist which will show the current items you have in your wishlist.
 * **Shopping Bag Icon** - There is an icon for the shopping bag which will show the current bag total if you have items in your bag.
 * **Link to All Products** - On the second row there is a link to All Products where you can select products By Price, By Rating, By Category or view All Products.
 * **Link to Plant Type** - On the second row there is also a link to Plant Types where you can select products by their category Succulents & Cacti, Indoor Plants, Air Purifying, Pet Friendly, Trailing, Patterned & Colourful, Flowering or All Plant Types.
@@ -242,34 +243,194 @@ I decided to use ‘Montserrat’ for the Plant Spot branding and ‘Lato’ and
 **Footer**
 
 Each page of the website features a consistent responsive footer design:
-
 * **Social Media Links** - These links connect the site user to the store's business profile on Facebook, and also the developer's LinkedIn and GitHub profiles.
 * **Newsletter Sign Up** - There is a MailChimp signup form where the user can sign up to the store's newsletter.
 
 **Homepage**
 
+* Navigation and Header Links
+* Hero Image
+* Jumbotron with Shop Now button
+* Footer
+
+
 **Products**
+
+* Navigation and Header Links
+* Sort the list of Products by:
+    * Price (low to high)
+    * Price (high to low)
+    * Rating (low to high)
+    * Rating (high to low)
+    * Name (A - Z)
+    * Name (Z - A)
+    * Category (A - Z)
+    * Category (Z - A)
+
+* Displays a list of Products with:
+    * Product Image
+    * Product Name
+    * Price
+    * Category
+    * Rating
+
+* Footer
 
 **Products Details**
 
+* Navigation and Header Links
+* Displays the Products with:
+    * Product Image
+    * Product Name
+    * Price
+    * Category
+    * Rating
+    * Product Description
+* Quantity:
+    * Minus button to decrease quantity
+    * Quantity input box where the user can type the quantity required
+    * Plus button to increase quantity
+* Keep Shopping button which returns the user to the all products page
+* Add To Bag button which adds the item and desired quantity to the shopping bag
+* Add To Wishlist button which adds 1 quantity of the product to the wishlist
+* Product Reviews:
+    * Site User can view the product reviews
+    * Logged in User can leave a product review    
+* Footer
+
+**Product Management**
+
+* **Add Product:**
+* Category drop-down menu
+* SKU
+* Name
+* Description
+* Price
+* Rating
+* Image url
+* Select Image button
+* Cancel button
+* Add Product button
+* Success message once added product
+
+* **Edit Product:**
+* Alert message - You are editing Product Name
+* Category drop-down menu
+* SKU
+* Name
+* Description
+* Price
+* Rating
+* Image url
+* Current Image displayed
+* Checkbox to remove Current Image
+* Select Image button
+* Cancel button
+* Update Product button
+* Success message once updated product
+
+* **Delete Product:**
+* Delete button
+* Success message once deleted product
+
+**Wishlist**
+* Navigation and Header Links
+* **No items in the Wishlist:**
+    * Displays message that your wishlist is empty
+    * Keep Shopping button which returns the user to the all products page
+* **Items in the Wishlist:**
+    * Product Image
+    * Product Name
+    * Product SKU
+    * Product Price
+    * Minus button to decrease quantity
+    * Quantity input box where the user can type the quantity required
+    * Plus button to increase quantity
+    * Update button to update the wishlist quantity for the product
+    * Remove button to remove the item from the wishlist
+    * Subtotal
+    * Wishlist Total
+    * Keep Shopping button which returns the user to the all products page    
+* Footer
+
 **Shopping Bag**
+* Navigation and Header Links
+* **No items in the Shopping Bag:**
+    * Displays message that your shopping bag is empty
+    * Keep Shopping button which returns the user to the all products page
+* **Items in the Shopping Bag:**:
+    * Product Image
+    * Product Name
+    * Product SKU
+    * Product Price
+    * Minus button to decrease quantity
+    * Quantity input box where the user can type the quantity required
+    * Plus button to increase quantity
+    * Update button to update the shopping bag quantity for the product
+    * Remove button to remove the item from the shopping bag
+    * Subtotal
+    * Bag Total
+    * Delivery Cost
+    * Grand Total
+    * Delivery message advising of how much more they need to spend for free delivery
+    * Keep Shopping button which returns the user to the all products page
+    * Secure Checkout button which takes the user to the checkout page   
+* Footer
 
 **Checkout**
+* Navigation and Header Links
+* Checkout Form:
+    * Full Name
+    * Email Address
+    * Phone Number
+    * Street Address 1
+    * Street Address 2
+    * Town or City
+    * County, State or Locality
+    * Postal Code
+    * Country
+    * Card Number
+* Order Summary:
+    * Product Image
+    * Product Name
+    * Qty
+    * Subtotal
+    * Order Total
+    * Delivery Cost
+    * Grand Total
+* Adjust Bag button which takes the user back to the shopping bag page
+* Complete Order button which processes the payment and order
+* Footer
 
 **Order Confirmation**
 
 **Profile**
-
-**Add Product**
-
-**Edit Product**
+* Navigation and Header Links
+* Default Delivery Information:
+    * Phone Number
+    * Street Address 1
+    * Street Address 2
+    * Town or City
+    * County, State or Locality
+    * Postal Code
+    * Country
+    * Update Information button
+* Order History:
+    * Order Number
+    * Date
+    * Items
+    * Order Total
+* Footer
 
 **Contact Us**
-
-**Reviews**
-
-
-
+* Navigation and Header Links
+* Contact Us Form:
+    * Name
+    * Email Address
+    * Subject
+    * Message
+    * Send Message button
+* Footer
 
 
 ### Future Features

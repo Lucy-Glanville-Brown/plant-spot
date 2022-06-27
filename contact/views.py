@@ -5,6 +5,7 @@ from django.conf import settings
 
 from .forms import ContactForm
 
+
 # Credit - https://docs.djangoproject.com/en/4.0/topics/forms/
 def contact(request):
     # if this is a POST request we need to process the form data
@@ -39,17 +40,3 @@ def contact(request):
         form = ContactForm()
 
     return render(request, 'contact/contact.html', {'form': form})
-
-
-# from django.shortcuts import render, HttpResponse
-
-
-# def contact(request):
-#     """ Displays the contact form """
-#     return render(request, 'contact/contact.html')
- 
-
-#     name = forms.CharField(min_length=2, max_length=100, label='Name')
-#     email = forms.EmailField(widget=forms.EmailInput(), label='Your Email Address')
-#     subject = forms.CharField(min_length=3, max_length=40, label='Subject')
-#     message = forms.CharField(min_length=5, max_length=300, widget=forms.Textarea(), label='Message')

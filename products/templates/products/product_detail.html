@@ -97,7 +97,10 @@
                     <form class="form" action="{% url 'add_to_wishlist' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            <div class="col-12">
+                            <!--Quantity buttons hidden -->
+                            <!-- Unable to figure out how to create wishlist items
+                                without adding quantity -->
+                            <div class="col-12 d-none">
                                 <p class="mt-3"><strong>Wishlist Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
@@ -123,15 +126,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
+                                <button class="btn btn-black rounded-0 text-uppercase mt-5">
+                                    Add to Wishlist 
+                                    <span>
+                                        <i class="fas fa-solid fa-gift ml-1"></i>
                                     </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Wishlist">
+                                </button>
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -162,7 +163,7 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        {% if reviews_by_user %}
+                        {% if reviews_by_user_profile %}
                         <div class="col">
                             <h6>You have left a review already - thank you</h6>
                         </div>

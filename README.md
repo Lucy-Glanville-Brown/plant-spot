@@ -67,9 +67,65 @@ I used GitHub Projects to create a Kanban board to manage the planning and imple
 
 ### Strategy <a name="strategy"></a>
 
+* Develop an e-commerce website so that people can browse, choose and purchase Plant Spot's products.
+* The site must be visually appealing and simple to navigate.
+* Create an Admin access account on the platform to allow the company to make the required changes to the data sets in the database.
+* Produce a secure and comprehensive backend structure, including database hosting any data stored online.
+* Build a smart and responsive web app to enable users to view displayed information easily.
+* Handle any errors in such a way to help the user understand the issue and provide an easy form of contact if any error should persist.
+
+
 ### Scope <a name="scope"></a>
 
+For the users I wanted to provide them with easy naviagation and eye catching images for the homepage and products. The site has responsive design so should function correctly across various devices such as, Mobiles, Tablet, Laptop and Desktop.
+
+**Functional Requirements**   
+The unregistered users will be able to:  
+- Sign up to the site by providing the username, email, and password.    
+- View all products and sort them by price, rating, name and category.  
+- Search for products.  
+- View the product's detail.  
+- Add products to the shopping bag.  
+- Update and remove items in the shopping bag.  
+- Checkout and make a payment.  
+- Receive an email confirmation of the transaction. 
+
+The registered users will be able to:  
+- Do all things that unregistered users are able to do.   
+- Log in to the site by providing a username and password.  
+- View the profile page.  
+- Update delivery information on their profile page.  
+- View order history on their profile page.  
+- Write reviews for products that they have purchased.  
+- Edit those reviews.  
+- Delete those reviews.  
+- Add products to their wishlist.  
+- Remove products from the wishlist.
+
+The admin/ site owners will be able to:
+- Have all functionalities as a registered user.  
+- Add a product to the site.  
+- Edit or update a product.  
+- Delete a product. 
+
+**Non-functional Requirements**  
+Users will be able to:  
+- View reviews left by registered users.  
+- Send a message to the store via contact form.  
+- Navigate easily and intuitively throughout the site.
+- Follow Plant Spot on social media.
+- Sign up to Plant Spot's newsletter.
+
 ### Structure <a name="structure"></a>
+
+This site has been designed with simplicity in mind, each page only has key information on it so that the user can find what they want quickly.
+
+The database allows the following functionality:
+* Registration
+* Login/Logout
+* Leave Product Reviews (Registered Users)
+* Add/Edit/Delete products in the store (Superuser Only)
+
 
 ### Skeleton <a name="skeleton"></a>
 
@@ -141,6 +197,8 @@ Finally I used the WebAIM contrast checker to find the right shade of green whic
 
 
 #### Typography
+
+I decided to use ‘Montserrat’ for the Plant Spot branding and ‘Lato’ and sans-serif for the remaining text.
 
 [Back to top ⇧](#)
 

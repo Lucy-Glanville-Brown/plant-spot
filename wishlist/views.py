@@ -1,5 +1,4 @@
-from django.shortcuts import (
-    render, redirect, reverse, HttpResponse, get_object_or_404)
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
@@ -15,54 +14,48 @@ def add_to_wishlist(request, item_id):
     """ Add a quantity of the specified product to the wishlist """
 
     product = get_object_or_404(Product, pk=item_id)
-
-    wishlist_quantity = int(request.POST.get('wishlist_quantity'))
     redirect_url = request.POST.get('redirect_url')
     wishlist = request.session.get('wishlist', {})
 
-    if item_id in list(wishlist.keys()):
-        wishlist[item_id] += wishlist_quantity
-        messages.success(request,
-                         f'Updated {product.name} quantity to {wishlist[item_id]}')
+    if request.user.is_authenticated:
+        if request.POST:
+            if product.user_wishlist.filter(id=request.user.id).exists():
+                product.user_wishlist.remove(request.user)
+                wishlist.pop(item_id)
+                messages.success(
+                    request,
+                    f'{product.name} has been removed from your wishlist'
+                )
+            else:
+                product.user_wishlist.add(request.user)
+                messages.success(
+                    request, f'{product.name} has been added to your wishlist'
+                    )
+                wishlist[item_id] = product.name
+
+        request.session['wishlist'] = wishlist
+
+        return redirect(redirect_url)
     else:
-        wishlist[item_id] = wishlist_quantity
-        messages.success(request, f'Added {product.name} to your wishlist')
-
-    request.session['wishlist'] = wishlist
-    return redirect(redirect_url)
-
-
-def adjust_wishlist(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
-
-    product = get_object_or_404(Product, pk=item_id)
-
-    wishlist_quantity = int(request.POST.get('wishlist_quantity'))
-    wishlist = request.session.get('wishlist', {})
-    if wishlist_quantity > 0:
-        wishlist[item_id] = wishlist_quantity
-        messages.success(request,
-                         f'Updated {product.name} wishlist_quantity to {wishlist[item_id]}')
-    else:
-        wishlist.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your wishlist')
-
-    request.session['wishlist'] = wishlist
-    return redirect(reverse('view_wishlist'))
+        messages.error(
+            request,
+            'You must be logged in to add an item to your wishlist'
+        )
+        return redirect(redirect_url)
 
 
 def remove_from_wishlist(request, item_id):
-    """Remove the item from the shopping wishlist"""
+    '''
+    Removes the item from the users wishlist
+    '''
+    redirect_url = request.POST.get('redirect_url')
+    wishlist = request.session.get('wishlist', {})
 
-    try:
-        product = get_object_or_404(Product, pk=item_id)
-        wishlist = request.session.get('wishlist', {})
-        wishlist.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your wishlist')
+    product = get_object_or_404(Product, pk=item_id)
+    wishlist.pop(item_id)
+    product.user_wishlist.remove(request.user)
+    messages.success(request, f'{ product.name } has been deleted!')
 
-        request.session['wishlist'] = wishlist
-        return HttpResponse(status=200)
+    request.session['wishlist'] = wishlist
 
-    except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)
+    return redirect(redirect_url)

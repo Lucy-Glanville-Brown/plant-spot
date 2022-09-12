@@ -68,8 +68,13 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id)
 
+    user_wishlist = False
+    if product.user_wishlist.filter(id=request.user.id).exists():
+        user_wishlist = True
+
     context = {
         'product': product,
+        'user_wishlist': user_wishlist,
         'reviews': reviews,
         'form': ReviewForm()
     }

@@ -369,3 +369,29 @@ footer {
         padding: .25rem .5rem !important;
     }
 }
+
+/*.....................................................Wishlist*/
+
+.wishlist_left {
+    float: left;
+}
+
+.wishlist_right {
+    float: right;
+}
+
+.heart {
+    color: #f127089c;
+    padding: 0 10px 0 10px;
+}
+
+.btn-like {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.no-items {
+    height: 250px;
+}

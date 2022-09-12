@@ -10,6 +10,8 @@ def view_wishlist(request):
     return render(request, 'wishlist/wishlist.html')
 
 
+# Based on Very Acadmey's Youtube Video
+# https://www.youtube.com/watch?v=OgA0TTKAtqQ
 def add_to_wishlist(request, item_id):
     """ Add a quantity of the specified product to the wishlist """
 
@@ -54,7 +56,7 @@ def remove_from_wishlist(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     wishlist.pop(item_id)
     product.user_wishlist.remove(request.user)
-    messages.success(request, f'{ product.name } has been deleted!')
+    messages.success(request, f'{ product.name } has been removed from your wishlist')
 
     request.session['wishlist'] = wishlist
 

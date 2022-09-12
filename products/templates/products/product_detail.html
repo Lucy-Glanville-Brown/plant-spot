@@ -13,6 +13,7 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
+            <!-- Product image -->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -26,6 +27,7 @@
                     {% endif %}
                 </div>
             </div>
+            <!-- Product details -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
@@ -42,6 +44,7 @@
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
+                    <!-- Edit/Delete product if superuser -->
                     {% if request.user.is_superuser %}
                         <br>
                         <small>
@@ -49,11 +52,13 @@
                             <a class="btn btn-danger rounded mt-3" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
+                    <!-- Product description -->
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
+                                <!-- Product quantity -->
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
@@ -79,22 +84,22 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- Keep shopping / Add to bag buttons -->
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-3" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
 
-                    <!-- Wishlist from GinAmore -->
-                    <div class="col-sm-12 col-md-6">
+                    <!-- Wishlist -->
+                    <div class="col-12">
                         <div class="row mt-4">
                             <div class="p-0 mb-4 wishlist-area">
                                 <form class="form" action="{% url 'add_to_wishlist' product.id %}" method="POST">

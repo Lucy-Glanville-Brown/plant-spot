@@ -25,19 +25,7 @@
             <div class="col">
                 {% if wishlist_products %}
                     <!-- wishlist for sm screen sizes-->
-                    <div class="d-block d-md-none">                                            
-                        <div class="row">
-                            <div class="col">
-                                <!-- wishlist summary with keep shopping button -->
-                                <p class="text-muted mb-3">A summary of your wishlist contents is below</p>
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg mb-3">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="d-block d-md-none">
                         {% for item in wishlist_products %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
@@ -51,11 +39,36 @@
                                 <div class="col-12 col-sm-6 mb-2">
                                     <!-- wishlist product-info -->
                                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                    <p class="my-0 small text-muted">Price: £{{ item.product.price }}</p>
+                                    <p class="my-0 text-muted">Price: £{{ item.product.price }}</p>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-2">
+                                    <form class="form wishlist_left" action="{% url 'remove_from_wishlist' item.product.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <div class="wishlist_left">
+                                            <button type="submit" value="{{ item.product.id }}" class="btn-like p-0" aria-label="Remove from wishlist">
+                                                <i class="fas fa-heart heart"></i>
+                                                <div class="wishlist_right ml-2">
+                                                    <p>Remove from wishlist</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    </form>
                                 </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
                         {% endfor %}
+                        <div class="row">
+                            <div class="col">
+                                <!-- wishlist keep shopping button -->
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg mb-3">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Keep Shopping</span>
+                                </a>
+                            </div>
+                        </div>
                         <div class="btt-button shadow-sm rounded-0 border border-black">
                             <a class="btt-link d-flex h-100">
                                 <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>

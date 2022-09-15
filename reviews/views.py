@@ -1,12 +1,11 @@
-from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
+from profiles.models import UserProfile
+from products.models import Product
 from .models import Review
 from .forms import ReviewForm
-
-from products.models import Product
-from profiles.models import UserProfile
 
 
 @login_required

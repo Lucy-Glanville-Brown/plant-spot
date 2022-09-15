@@ -5,6 +5,9 @@ from django.conf import settings
 
 from .forms import ContactForm
 
+# Defining a new custom message level
+SUCCESS_NO_BAG = 50
+
 
 # Credit - https://docs.djangoproject.com/en/4.0/topics/forms/
 def contact(request):
@@ -26,8 +29,9 @@ def contact(request):
                 settings.EMAIL_HOST_USER,
                 [settings.EMAIL_HOST_USER]
             )
-            messages.success(
-                request, 'Your message has been sent!')
+            form.save()
+            messages.add_message(
+                    request, SUCCESS_NO_BAG, 'Your message has been sent!')
             # redirect to contact page
             return redirect(reverse('contact'))
         else:

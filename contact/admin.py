@@ -7,6 +7,7 @@ class ContactFormAdmin(admin.ModelAdmin):
     """ Admin for the contact form """
 
     list_display = (
+        'created_on',
         'name',
         'email',
         'subject',

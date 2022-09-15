@@ -3,6 +3,9 @@ from django.contrib import messages
 
 from products.models import Product
 
+# Defining a new custom message level
+SUCCESS_NO_BAG = 50
+
 
 def view_wishlist(request):
     """ A view that renders the wishlist contents page """
@@ -24,14 +27,14 @@ def add_to_wishlist(request, item_id):
             if product.user_wishlist.filter(id=request.user.id).exists():
                 product.user_wishlist.remove(request.user)
                 wishlist.pop(item_id)
-                messages.success(
-                    request,
+                messages.add_message(
+                    request, SUCCESS_NO_BAG,
                     f'{product.name} has been removed from your wishlist'
                 )
             else:
                 product.user_wishlist.add(request.user)
-                messages.success(
-                    request, f'{product.name} has been added to your wishlist'
+                messages.add_message(
+                    request, SUCCESS_NO_BAG,  f'{product.name} has been added to your wishlist'
                     )
                 wishlist[item_id] = product.name
 
@@ -56,7 +59,8 @@ def remove_from_wishlist(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     wishlist.pop(item_id)
     product.user_wishlist.remove(request.user)
-    messages.success(request, f'{ product.name } has been removed from your wishlist')
+    messages.add_message(
+        request, SUCCESS_NO_BAG,  f'{ product.name } has been removed from your wishlist')
 
     request.session['wishlist'] = wishlist
 

@@ -141,11 +141,26 @@
                     </div>
                         <div class="row">
                             <div class="col">
+                                <p>Request User: {{request.user.id}}</p> <!-- for testing, remove before deployment-->
                                 {% for review in reviews %}
+                                    <p>Review User: {{review.user.id}}</p> <!-- for testing, remove before deployment-->
                                     <p>User &nbsp: {{ review.user }}</p>
                                     <p>Date &nbsp: {{ review.created_on }}</p>
                                     <p>Rating &nbsp: {{ review.stars }}</p>
                                     <p>Comments &nbsp: {{ review.comment }}</p>
+                                    {% if request.user.id == review.user.id %}
+                                        <div class="col text-right del-product">
+                                            <a class="text-info" href="{% url 'edit_review' review.id %}">
+                                                Edit
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </a>
+                                            <span> | </span>
+                                            <a class="text-danger" href="#">
+                                                Delete
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </div>
+                                    {% endif %}
                                     <hr>
                                 {% endfor %}
                             </div>

@@ -155,7 +155,7 @@
                                                 <i class="fa-solid fa-pencil"></i>
                                             </a>
                                             <span> | </span>
-                                            <a class="text-danger" href="#">
+                                            <a class="text-danger" href="{% url 'delete_review' review.id %}">
                                                 Delete
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </a>
@@ -169,6 +169,7 @@
                             <div class="col">
                                 {% if request.user.is_authenticated %}
                                     <h4>Add a Review</h4>
+                                    <hr>
                                     {% include "reviews/add_review.html" %}
                                 {% else %}
                                     <h6>You must be logged in to leave a review</h6>

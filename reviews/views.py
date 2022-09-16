@@ -72,3 +72,18 @@ def edit_review(request, review_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """ Delete review from the product details page """
+
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+
+    if request.method == 'POST':
+        review.delete()
+        messages.success(request, 'Your review has been deleted!')
+        return redirect(reverse_lazy('product_detail', args=[product.id]))
+
+    return render(request, 'reviews/delete_review.html')

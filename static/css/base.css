@@ -410,3 +410,18 @@ footer {
         padding: 50px;
     }
 }
+
+/*.....................................................Profile*/
+
+.profile-area {
+    padding-bottom: 25px;
+}
+
+/* Adds padding to profile area on larger screens */
+
+@media (min-width: 990px) {
+    .profile-area {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

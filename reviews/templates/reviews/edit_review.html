@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-sm-8 mb-2">
                 {% if request.user.is_authenticated %}
-                    <form method="POST" action="{% url 'edit_review' product.id %}">
+                    <form method="POST" action="{% url 'edit_review' review.id %}">
                         {% csrf_token %}
                         {{ form|crispy }}
                         <button class="btn btn-black rounded-0 text-uppercase float-right">Update Review</button>

@@ -403,6 +403,14 @@ footer {
     padding: 0 20px 0 20px;
 }
 
+/* Adds padding to review area on small screens */
+
+@media (max-width: 990px) {
+    .review-area {
+        padding-bottom: 30px;
+    }
+}
+
 /* Adds padding to review area on larger screens */
 
 @media (min-width: 990px) {

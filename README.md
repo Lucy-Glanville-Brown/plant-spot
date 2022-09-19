@@ -8,6 +8,9 @@ This site is fictional and was built for education purposes and no orders will b
 
 [View the live project here](https://plant-spot.herokuapp.com/)
 
+![Am I Responsive](https://user-images.githubusercontent.com/85178695/191125086-d47cabeb-53da-4918-b7ed-b711f6573690.png)
+
+
 ## Table of contents
 1. [UX](#ux)
     * [User Stories](#userstories)
@@ -19,10 +22,11 @@ This site is fictional and was built for education purposes and no orders will b
 
 2. [Technologies](#technologies)
 3. [Features](#features)
-4. [Testing](#testing)
-5. [Deployment](#deployment)
-6. [Credits](#credits)
-7. [Acknowledgements](#acknowledgements)
+4. [Marketing](#marketing)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+8. [Acknowledgements](#acknowledgements)
 
 
 ## UX <a name="ux"></a>
@@ -230,23 +234,35 @@ I decided to use ‘Montserrat’ for the Plant Spot branding and ‘Lato’ and
 
 **Navigation & Header**
 
+![Navbar](https://user-images.githubusercontent.com/85178695/191125240-00e53ec3-4ad3-463d-b353-96f44ccae205.png)
+
 * **Logo** - The Plant Spot Logo is linked to the homepage so when clicking on it will take the user back to the homepage
 * **Search Bar** -  The search bar is coded to display the results of the user's search request, using the product name and description as parameters
 * **User Icon** - There is an icon for the user options. The user icon's dropdown selection is updated depending on whether the user is logged in, logged out, or if they a logged in as a superuser. The options are Register and Login if not signed in, My Profile and Logout is signed in and if the user is a Superuser they will be able to see Product Management.
 * **Wishlist Icon** - There is an icon for the wishlist which will show the current items you have in your wishlist.
 * **Shopping Bag Icon** - There is an icon for the shopping bag which will show the current bag total if you have items in your bag.
 * **Link to All Products** - On the second row there is a link to All Products where you can select products By Price, By Rating, By Category or view All Products.
+
+![all_products_menu](https://user-images.githubusercontent.com/85178695/191125391-06ba4ae7-a505-4ce4-816b-9f5e3ffc61fb.png)
+
 * **Link to Plant Type** - On the second row there is also a link to Plant Types where you can select products by their category Succulents & Cacti, Indoor Plants, Air Purifying, Pet Friendly, Trailing, Patterned & Colourful, Flowering or All Plant Types.
+
+![plant_type_menu](https://user-images.githubusercontent.com/85178695/191125457-e95d84fa-fdb2-4c7b-ab79-bf727840a8be.png)
+
 * **Link to Contact Us** - There is also a link for Contact Us which will take the user to a contact form to be completed.
 * **Free Delivery Banner** - There is a banner telling the user that there's free delivery on ourders over £50.
 
 **Footer**
+
+![footer](https://user-images.githubusercontent.com/85178695/191125624-ea3c52e7-4bd5-4778-a9b7-9e9bb3ca8de1.png)
 
 Each page of the website features a consistent responsive footer design:
 * **Social Media Links** - These links connect the site user to the store's business profile on Facebook, and also the developer's LinkedIn and GitHub profiles.
 * **Newsletter Sign Up** - There is a MailChimp signup form where the user can sign up to the store's newsletter.
 
 **Homepage**
+
+![Plant Spot Homepage](https://user-images.githubusercontent.com/85178695/191125696-01960025-2ff7-4f8a-8854-d4c7d7ab7994.png)
 
 * Navigation and Header Links
 * Hero Image
@@ -255,6 +271,9 @@ Each page of the website features a consistent responsive footer design:
 
 
 **Products**
+
+![Plant Spot Product Page](https://user-images.githubusercontent.com/85178695/191125722-47409acb-97da-41c5-8a2b-4b156357b387.png)
+
 
 * Navigation and Header Links
 * Sort the list of Products by:
@@ -267,6 +286,8 @@ Each page of the website features a consistent responsive footer design:
     * Category (A - Z)
     * Category (Z - A)
 
+![products_sort](https://user-images.githubusercontent.com/85178695/191125847-8a610d44-bff6-4bd9-903a-5a8d93b4e7b6.png)
+
 * Displays a list of Products with:
     * Product Image
     * Product Name
@@ -277,6 +298,8 @@ Each page of the website features a consistent responsive footer design:
 * Footer
 
 **Products Details**
+
+![Plant Spot Product Details Page](https://user-images.githubusercontent.com/85178695/191125895-90a0cd75-b8d2-4dc3-a2a2-192aef1a3c49.png)
 
 * Navigation and Header Links
 * Displays the Products with:
@@ -299,6 +322,8 @@ Each page of the website features a consistent responsive footer design:
 * Footer
 
 **Product Management**
+
+![Product Management page](https://user-images.githubusercontent.com/85178695/191125957-94c7245c-dd8c-43a4-aa25-0aae90667099.png)
 
 * **Add Product:**
 * Category drop-down menu
@@ -334,10 +359,16 @@ Each page of the website features a consistent responsive footer design:
 * Success message once deleted product
 
 **Wishlist**
+
+![Wishlist Empty](https://user-images.githubusercontent.com/85178695/191125995-2308cca4-1b18-4f26-8049-e3044113c8c1.png)
+
 * Navigation and Header Links
 * **No items in the Wishlist:**
     * Displays message that your wishlist is empty
     * Keep Shopping button which returns the user to the all products page
+
+![Wishlist with item](https://user-images.githubusercontent.com/85178695/191126075-57d32ae5-1e0b-463b-9472-a3dea07139ca.png)
+
 * **Items in the Wishlist:**
     * Product Image
     * Product Name
@@ -354,10 +385,16 @@ Each page of the website features a consistent responsive footer design:
 * Footer
 
 **Shopping Bag**
+
+![Shopping Bag empty](https://user-images.githubusercontent.com/85178695/191126243-13409976-6e2f-4505-8b9d-69a6723ab31b.png)
+
 * Navigation and Header Links
 * **No items in the Shopping Bag:**
     * Displays message that your shopping bag is empty
     * Keep Shopping button which returns the user to the all products page
+
+![Shopping Bag with item](https://user-images.githubusercontent.com/85178695/191126272-4e8d7906-1d37-4ba2-aac7-ccba91d2b227.png)
+
 * **Items in the Shopping Bag:**:
     * Product Image
     * Product Name
@@ -421,8 +458,14 @@ Each page of the website features a consistent responsive footer design:
     * Items
     * Order Total
 * Footer
+* **Order Confirmation from Profile Page**
+
+![Order Conf from Profile Page](https://user-images.githubusercontent.com/85178695/191126473-607f5c90-a066-4bcb-888a-bddc1600a6cd.png)
 
 **Contact Us**
+
+![Contact Us Page](https://user-images.githubusercontent.com/85178695/191126516-0613af8f-dd47-4e01-a648-165203b90483.png)
+
 * Navigation and Header Links
 * Contact Us Form:
     * Name
@@ -434,6 +477,15 @@ Each page of the website features a consistent responsive footer design:
 
 
 ### Future Features
+
+[Back to top ⇧](#)
+
+## Marketing <a name="marketing"></a>
+
+### Facebook Page
+
+![Plant Spot Facebook Page](https://user-images.githubusercontent.com/85178695/191124741-ee2c7b7a-9b18-4ec5-9336-902711908fef.png)
+
 
 [Back to top ⇧](#)
 

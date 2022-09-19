@@ -102,7 +102,7 @@
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">£{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3">
                                         <form class="form wishlist_left" action="{% url 'remove_from_wishlist' item.product.id %}" method="POST">

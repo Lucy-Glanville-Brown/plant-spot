@@ -52,8 +52,8 @@ def edit_review(request, review_id):
         form = ReviewForm(request.POST, request.FILES, instance=review)
         if form.is_valid():
             form.save()
-            messages.success(
-                request, 'Review successfully updated!')
+            messages.add_message(
+                    request, SUCCESS_NO_BAG, 'Review successfully updated!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(

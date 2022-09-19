@@ -455,26 +455,123 @@ Each page of the website features a consistent responsive footer design:
 
 ## Deployment <a name="deployment"></a>
 
+This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal. The code was then remotely deployed to Heroku.
+
 ### Deploying on Heroku
+
+To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+1. Create the Heroku App:
+    * Select "Create new app" in Heroku.
+    * Choose a name for your app and select the location.
+
+2.  Attach the Postgres database:
+    * In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
+
+3.  Prepare the environment and settings.py file:
+    * In the Settings tab, click on Reveal Config Vars and copy the URL next to DATABASE_URL.
+    * In your GitPod workspace, create an env.py file in the main directory.
+    * Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
+    * Add the SECRET_KEY value to the Config Vars in Heroku.
+    * Update the settings.py file to import the env file and add the SECRETKEY and DATABASE_URL file paths.
+    * Update the Config Vars with the Cloudinary URL, adding into the settings.py file also.
+    * In settings.py add the following sections:
+    ```
+    STATIC_URL
+    STATICFILES_DIRS
+    MEDIA_URL
+    MEDIA_ROOT
+    TEMPLATES_DIR
+    Update DIRS in TEMPLATES with TEMPLATES_DIR
+    Update ALLOWED_HOSTS with ['app_name.herokuapp.com', 'localhost']
+    ```
+
+4.  Set DISABLE_COLLECTSTATIC and Deploy to Heroku:
+    * Create three directories in the main directory; media, storage and templates.
+    * Create a file named "Procfile" in the main directory and add the following:
+
+        ` web: gunicorn project-name.wsgi `
+        
+    * in the terminal, log in to Heroku and then enter the following:
+
+        ` heroku config:set DISABLE_COLLECTSTATIC=1 --app (Heroku App Name) `
+
+    * Go to the 'Deploy' tab on Heroku and connect to GitHub, then to the required repository. Click on 'Deploy Branch' and wait for the build to load. When the build is complete, the app can be opened through Heroku.
+
+5. Set the config Vars on Heroku:
+    * Navigate to the 'Settings' tab and click 'Reveal Config Vars'.
+    * Enter key-value pairs that match those in your project files for the keys below:
+
+        |          KEY          |               VALUE               |
+        |:---------------------:|:---------------------------------:|
+        | SECRET_KEY            | YOUR_SECRET_KEY                   |
+        | STRIPE_PUBLIC_KEY     | YOUR_STRIPE_PUBLIC_KEY            |
+        | STRIPE_SECRET_KEY     | YOUR_STRIPE_SECRET_KEY            |
+        | DATABASE_URL          | YOUR_DATABASE_URL                 |
+        | STRIPE_WH_SECRET      | YOUR_STRIPE_WH_SECRET             |
+        | AWS_SECRET_ACCESS_KEY | YOUR_AWS_SECRET_ACCESS_KEY        |
+        | AWS_ACCESS_KEY_ID     | YOUR_AWS_ACCESS_KEY_ID            |
+        | USE_AWS               | YOUR_USE_AWS                      |
+        | EMAIL_HOST_PASS       | YOUR_EMAIL_HOST_PASS              |
+        | EMAIL_HOST_USER       | YOUR_EMAIL_HOST_USER              |
+        | DISABLE_COLLECTSTATIC | 1 (Add this variable temporarily) |
+
 
 ### Forking the Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
 
-* Log into GitHub or create an account.
-* Locate the GitHub Repository.
-* At the top of the repository, on the right side of the page, select "Fork"
-* You should now have a copy of the original repository in your GitHub account.
+1. Log into GitHub or create an account.
+2. Locate the GitHub Repository.
+3. At the top of the repository, on the right side of the page, select "Fork"
+4. You should now have a copy of the original repository in your GitHub account.
 
 ### Creating a Clone
 
-How to run this project locally:
+To clone the website please use the following steps: -
 
-* Install the GitPod Browser Extension for Chrome.
-* After installation, restart the browser.
-* Log into GitHub or create an account.
-* Locate the GitHub Repository.
-* Click the green "GitPod" button in the top right corner of the repository. This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
+1. Navigate to the repository in github.
+2. Choose the correct repository. In this case it is
+3. Click the 'Code' button
+4. You will now be given options to make a clone of the website, to download it or to open with GitHub Desktop. You can choose to clone the 'HTTPS', the 'SSH' or 'GitHub CLI'
+5. Open Git Bash or similar
+6. Navigate to your desired directory for the cloned project.
+7. Type 'git clone' followed by the URL copied in step 3.
+
+    ` git clone https://github.com/Lucy-Glanville-Brown/plant-spot.git `
+
+8. Press 'Enter' to create your local clone.
+9. Create a new env.py file at the base directory level and copy the following into the created env.py file:
+```
+import os
+
+os.environ["DEVELOPMENT"] = "True"
+os.environ["SECRET_KEY"] = "" Add your secret key
+os.environ["STRIPE_PUBLIC_KEY"] = "" Add your stripe public key
+os.environ["STRIPE_SECRET_KEY"] = "" Add your stripe secret key
+os.environ["STRIPE_WH_SECRET"] = "" Add your stripe Webhook secret key
+os.environ["EMAIL_HOST_PASS"] = "" Passcode from your email client
+os.environ["EMAIL_HOST_USER"] = "" Your email address
+```
+10. Type the following in the terminal to install all the required django modules and dependencies:
+
+    ` pip3 install -r requirements.txt `
+
+11. Next, create your database by entering the following two commands in the terminal, one after another:
+
+    ` python3 manage.py makemigrations `
+
+    ` python3 manage.py migrate `
+
+12. You will also need to install the data for the json files for categories and products by enterning the two comands below, one after another:
+
+    ` python3 manage.py loaddata categories `
+
+    ` python3 manage.py loaddata products `
+
+13. To be able to have admin access, create a superuser using the line below and then following the instructions in the terminal:
+
+    ` python3 manage.py createsuperuser `
 
 [Back to top ⇧](#)
 

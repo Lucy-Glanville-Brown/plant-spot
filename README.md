@@ -24,6 +24,7 @@ This site is fictional and was built for education purposes and no orders will b
 3. [Features](#features)
 4. [Marketing](#marketing)
 5. [Testing](#testing)
+    * [TESTING.md](https://github.com/Lucy-Glanville-Brown/plant-spot/blob/main/TESTING.md)
 6. [Deployment](#deployment)
 7. [Credits](#credits)
 8. [Acknowledgements](#acknowledgements)
@@ -548,17 +549,7 @@ Each page of the website features a consistent responsive footer design:
 
 ## Testing <a name="testing"></a>
 
-### Bugs
-
-### Validator Testing
-
-* W3C Markup Validation
-
-* W3C CSS Validation
-
-* Lighthouse
-
-* PEP8
+Testing information can be found in a separate testing file [here](https://github.com/Lucy-Glanville-Brown/plant-spot/blob/main/TESTING.md "Link to testing file")
 
 [Back to top ⇧](#)
 

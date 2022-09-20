@@ -143,10 +143,10 @@
                 {% endif %}
                 <!-- Displays reviews posted -->
                 {% for review in reviews %}
-                    <p><strong>User</strong> &nbsp: {{ review.user }}</p>
-                    <p><strong>Date</strong> &nbsp: {{ review.created_on }}</p>
-                    <p><strong>Rating</strong> &nbsp: {{ review.stars }}</p>
-                    <p><strong>Comments</strong> &nbsp: {{ review.comment }}</p>
+                    <p><strong>User</strong> &nbsp; {{ review.user }}</p>
+                    <p><strong>Date</strong> &nbsp; {{ review.created_on }}</p>
+                    <p><strong>Rating</strong> &nbsp; {{ review.stars }}</p>
+                    <p><strong>Comments</strong> &nbsp; {{ review.comment }}</p>
                     <br>
                     <!-- Displays edit/delete buttons is user is review user/author -->
                     {% if request.user.id == review.user.id %}

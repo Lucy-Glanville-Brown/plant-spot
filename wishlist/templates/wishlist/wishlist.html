@@ -47,9 +47,9 @@
                                         <div class="wishlist_left">
                                             <button type="submit" value="{{ item.product.id }}" class="btn-like p-0" aria-label="Remove from wishlist">
                                                 <i class="fas fa-heart heart"></i>
-                                                <div class="wishlist_right ml-2">
-                                                    <p>Remove from wishlist</p>
-                                                </div>
+                                                <span class="wishlist_right ml-2">
+                                                    Remove from wishlist
+                                                </span>
                                             </button>
                                         </div>
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -110,9 +110,9 @@
                                             <div class="ml-5 wishlist_left">
                                                 <button type="submit" value="{{ item.product.id }}" class="btn-like p-0" aria-label="Remove from wishlist">
                                                     <i class="fas fa-heart heart"></i>
-                                                    <div class="wishlist_right ml-2">
-                                                        <p>Remove from wishlist</p>
-                                                    </div>
+                                                    <span class="wishlist_right ml-2">
+                                                        Remove from wishlist
+                                                    </span>
                                                 </button>
                                             </div>
                                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -121,7 +121,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="text-right">
+                                <td colspan="4" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
@@ -149,14 +149,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0);
     });
 </script>
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');

@@ -239,6 +239,20 @@ I decided to use ‘Montserrat’ for the Plant Spot branding and ‘Lato’ and
 * **Logo** - The Plant Spot Logo is linked to the homepage so when clicking on it will take the user back to the homepage
 * **Search Bar** -  The search bar is coded to display the results of the user's search request, using the product name and description as parameters
 * **User Icon** - There is an icon for the user options. The user icon's dropdown selection is updated depending on whether the user is logged in, logged out, or if they a logged in as a superuser. The options are Register and Login if not signed in, My Profile and Logout is signed in and if the user is a Superuser they will be able to see Product Management.
+
+   **Not Signed in Dropdown**
+
+![My Account not signed in](https://user-images.githubusercontent.com/85178695/191304321-968ef621-d1d0-49f7-a8d0-9b602ce0208f.png)
+
+   **Signed in Dropdown**
+   
+![My Account signed in](https://user-images.githubusercontent.com/85178695/191304610-f02a67c7-cac0-44f3-a267-997b0f1df0e1.png)
+ 
+   **Signed in as SuperUser**
+
+![My Account SuperUser](https://user-images.githubusercontent.com/85178695/191304769-27eb8ea0-be20-4c77-9157-aa2b7cead6ba.png)
+
+
 * **Wishlist Icon** - There is an icon for the wishlist which will show the current items you have in your wishlist.
 * **Shopping Bag Icon** - There is an icon for the shopping bag which will show the current bag total if you have items in your bag.
 * **Link to All Products** - On the second row there is a link to All Products where you can select products By Price, By Rating, By Category or view All Products.
@@ -267,8 +281,7 @@ Each page of the website features a consistent responsive footer design:
 * Navigation and Header Links
 * Hero Image
 * Jumbotron with Shop Now button
-* Footer
-
+* Footer 
 
 **Products**
 
@@ -296,6 +309,10 @@ Each page of the website features a consistent responsive footer design:
     * Rating
 
 * Footer
+* If user is SuperUser the edit/delete product buttons will be visible
+
+![Products Page Superuser](https://user-images.githubusercontent.com/85178695/191311291-8abece2b-9162-42e4-91c1-5f01bd5c3bbd.png)
+
 
 **Products Details**
 
@@ -320,6 +337,35 @@ Each page of the website features a consistent responsive footer design:
     * Site User can view the product reviews
     * Logged in User can leave a product review    
 * Footer
+* * If user is SuperUser the edit/delete product buttons will be visible
+
+![Product Details Page Superuser](https://user-images.githubusercontent.com/85178695/191311381-a5ea504a-d573-4517-a86c-30038d6bd7ef.png)
+
+**Reviews**
+
+* No reviews and user not logged in
+
+![0 reviews and not logged in](https://user-images.githubusercontent.com/85178695/191309193-4bdbfd62-206a-4a5f-84cf-3c50342d94ae.png)
+
+* Reviews and user not logged in
+
+![review not logged in](https://user-images.githubusercontent.com/85178695/191309281-3ceeca0f-c1af-4c54-851f-ea5bd1cad45d.png)
+
+* Reviews and User signed in displays review form to complete
+
+![Product reviews signed in](https://user-images.githubusercontent.com/85178695/191309586-70631aa5-e1ee-4093-bb80-3c5dbe4e3b38.png)
+
+* Reviews if User is the author of the review the edit/delete buttons will be visible
+
+![review if review author ](https://user-images.githubusercontent.com/85178695/191310527-969471fa-b381-4b5f-a1c1-c76de6fa0e16.png)
+
+* Editing review
+
+![Editing Review Page](https://user-images.githubusercontent.com/85178695/191310858-09ed401d-5c9e-4bb5-b5f6-c435482630d9.png)
+
+* Delete review
+
+![Delete Review Page](https://user-images.githubusercontent.com/85178695/191310948-3d5bccfe-1a62-4bf8-89ee-9749312d4315.png)
 
 **Product Management**
 
@@ -339,6 +385,9 @@ Each page of the website features a consistent responsive footer design:
 * Success message once added product
 
 * **Edit Product:**
+
+![Edit Product](https://user-images.githubusercontent.com/85178695/191311723-9aa68ddc-2486-4d89-9f03-bd76668b0ca6.png)
+
 * Alert message - You are editing Product Name
 * Category drop-down menu
 * SKU
@@ -415,6 +464,11 @@ Each page of the website features a consistent responsive footer design:
 * Footer
 
 **Checkout**
+
+![Checkout Page](https://user-images.githubusercontent.com/85178695/191306375-0538a200-ebe4-4269-ba4a-a06a65992792.png)
+
+![Checkout Page cont](https://user-images.githubusercontent.com/85178695/191310487-ca2bb524-5031-4745-aa53-7bd3de7266bd.png)
+
 * Navigation and Header Links
 * Checkout Form:
     * Full Name
@@ -441,6 +495,8 @@ Each page of the website features a consistent responsive footer design:
 
 **Order Confirmation**
 
+![Order confirmation checkout page](https://user-images.githubusercontent.com/85178695/191307071-f3c2d94b-d8a9-445b-ad72-99a7be8a6bd8.png)
+
 **Profile**
 * Navigation and Header Links
 * Default Delivery Information:
@@ -460,7 +516,8 @@ Each page of the website features a consistent responsive footer design:
 * Footer
 * **Order Confirmation from Profile Page**
 
-![Order Conf from Profile Page](https://user-images.githubusercontent.com/85178695/191126473-607f5c90-a066-4bcb-888a-bddc1600a6cd.png)
+![Order Conf from Profile Page](https://user-images.githubusercontent.com/85178695/191301593-d4004883-3222-434f-99b9-d3ee808b374d.png)
+
 
 **Contact Us**
 

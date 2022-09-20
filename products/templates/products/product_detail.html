@@ -142,11 +142,8 @@
                     </p>
                 {% endif %}
                 <!-- Displays reviews posted -->
-                <p>Request User: {{request.user.id}}</p> <!-- for testing, remove before deployment-->
                 <hr>
                 {% for review in reviews %}
-                    <p>Review User: {{review.user.id}}</p> <!-- for testing, remove before deployment-->
-                    <p>Review ID: {{review.id}}</p> <!-- for testing, remove before deployment-->
                     <p><strong>User</strong> &nbsp: {{ review.user }}</p>
                     <p><strong>Date</strong> &nbsp: {{ review.created_on }}</p>
                     <p><strong>Rating</strong> &nbsp: {{ review.stars }}</p>

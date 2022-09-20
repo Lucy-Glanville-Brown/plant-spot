@@ -33,7 +33,8 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     # User_wishlist taken from Very Academy Youtube Video
     # https://www.youtube.com/watch?v=OgA0TTKAtqQ
-    user_wishlist = models.ManyToManyField(User, related_name='user_wishlist', blank=True)
+    user_wishlist = models.ManyToManyField(User, related_name='user_wishlist',
+                                           blank=True)
 
     def __str__(self):
         return self.name

@@ -11,6 +11,7 @@ SUCCESS_NO_BAG = 50
 
 # Credit - https://docs.djangoproject.com/en/4.0/topics/forms/
 def contact(request):
+    """ View to render contact us page"""
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:

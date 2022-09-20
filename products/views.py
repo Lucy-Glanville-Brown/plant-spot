@@ -4,10 +4,10 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
 from reviews.models import Review
 from reviews.forms import ReviewForm
+from .models import Product, Category
+from .forms import ProductForm
 
 
 def all_products(request):

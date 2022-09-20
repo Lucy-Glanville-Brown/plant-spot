@@ -34,7 +34,8 @@ def add_to_wishlist(request, item_id):
             else:
                 product.user_wishlist.add(request.user)
                 messages.add_message(
-                    request, SUCCESS_NO_BAG,  f'{product.name} has been added to your wishlist'
+                    request, SUCCESS_NO_BAG,  f'{product.name} has been added \
+                         to your wishlist'
                     )
                 wishlist[item_id] = product.name
 
@@ -60,7 +61,8 @@ def remove_from_wishlist(request, item_id):
     wishlist.pop(item_id)
     product.user_wishlist.remove(request.user)
     messages.add_message(
-        request, SUCCESS_NO_BAG,  f'{ product.name } has been removed from your wishlist')
+        request, SUCCESS_NO_BAG,  f'{ product.name } has been removed from \
+            your wishlist')
 
     request.session['wishlist'] = wishlist
 

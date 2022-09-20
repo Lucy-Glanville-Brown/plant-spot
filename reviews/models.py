@@ -15,6 +15,7 @@ class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
 
     # Credit Bunny The Compiler
+    # https://blog.devgenius.io/lets-build-a-movie-review-django-app-47658f8e3751
     rate_choices = (
         (1, 1),
         (2, 2),

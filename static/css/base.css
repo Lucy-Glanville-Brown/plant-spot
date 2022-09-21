@@ -433,3 +433,15 @@ footer {
         padding-right: 50px;
     }
 }
+
+.link {
+    color: #0000FF;
+}
+
+.bag-total {
+    font-size: 1rem;
+}
+
+.grand-total {
+    font-size: 1.5rem;
+}

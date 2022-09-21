@@ -128,6 +128,13 @@ The database allows the following functionality:
 * Login/Logout
 * Leave Product Reviews (Registered Users)
 * Add/Edit/Delete products in the store (Superuser Only)
+* Contact Form
+ 
+**Database Schema**
+
+The database schema was designed using DrawSQL.
+
+![Database Schema](https://user-images.githubusercontent.com/85178695/191595232-1e71cafe-660e-4b6c-87fd-f6188e75ac41.png)
 
 
 ### Skeleton <a name="skeleton"></a>
@@ -777,6 +784,8 @@ os.environ["EMAIL_HOST_USER"] = "" Your email address
 * **XML Sitemaps** used from creating the sitemap.xml [here](https://www.xml-sitemaps.com/ "Link to XML Sitemaps")
 
 * **Tables Generator** used to create markdown tables for the readme file [here](https://www.tablesgenerator.com/markdown_tables "Link to markdown table generator")
+
+* **DrawSQL** used to create the database schema [here](https://drawsql.app/diagrams)
 
 [Back to top ⇧](#)
 

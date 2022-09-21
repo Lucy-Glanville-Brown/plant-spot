@@ -141,11 +141,42 @@ The database schema was designed using DrawSQL.
 
 The wire frames were created using Balsamiq.
 
-Mobile View
+**Homepage**
 
-Tablet View
+<img src="static/media/README/wireframes/home_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/home_mobile.png" style="height:400px;">
 
-Desktop View
+**Products**
+
+<img src="static/media/README/wireframes/products_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/products_mobile.png" style="height:400px;">
+
+**Product Details**
+
+<img src="static/media/README/wireframes/product_details_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/product_details_mobile.png" style="height:400px;">
+
+**Wishlist**
+
+<img src="static/media/README/wireframes/wishlist_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/wishlist_mobile.png" style="height:400px;">
+
+**Shopping Bag**
+
+<img src="static/media/README/wireframes/shopping_bag_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/shopping_bag_mobile.png" style="height:400px;">
+
+**Checkout**
+
+<img src="static/media/README/wireframes/checkout_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/checkout_mobile.png" style="height:400px;">
+
+**Order Confirmation**
+
+<img src="static/media/README/wireframes/order_confirmation_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/order_confirmation _mobile.png" style="height:400px;">
+
+**My Profile**
+
+<img src="static/media/README/wireframes/profile_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/profile_mobile.png" style="height:400px;">
+
+**Contact Us**
+
+<img src="static/media/README/wireframes/contact_us_laptop.png" style="height:400px;"><img src="static/media/README/wireframes/contact_us_mobile.png" style="height:400px;">
+
 
 ### Surface <a name="surface"></a>
 

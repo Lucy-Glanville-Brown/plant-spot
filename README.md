@@ -376,7 +376,7 @@ Each page of the website features a consistent responsive footer design:
 
 ![Product Management page](https://user-images.githubusercontent.com/85178695/191125957-94c7245c-dd8c-43a4-aa25-0aae90667099.png)
 
-* **Add Product:**
+**Add Product:**
 * Category drop-down menu
 * SKU
 * Name
@@ -389,7 +389,7 @@ Each page of the website features a consistent responsive footer design:
 * Add Product button
 * Success message once added product
 
-* **Edit Product:**
+**Edit Product:**
 
 ![Edit Product](https://user-images.githubusercontent.com/85178695/191311723-9aa68ddc-2486-4d89-9f03-bd76668b0ca6.png)
 
@@ -408,7 +408,10 @@ Each page of the website features a consistent responsive footer design:
 * Update Product button
 * Success message once updated product
 
-* **Delete Product:**
+**Delete Product:**
+
+![Product deleted](https://user-images.githubusercontent.com/85178695/191572491-b1ec82d3-eda1-47ba-8db3-2f1467e21486.png)
+
 * Delete button
 * Success message once deleted product
 
@@ -503,6 +506,9 @@ Each page of the website features a consistent responsive footer design:
 ![Order confirmation checkout page](https://user-images.githubusercontent.com/85178695/191307071-f3c2d94b-d8a9-445b-ad72-99a7be8a6bd8.png)
 
 **Profile**
+
+![profile page](https://user-images.githubusercontent.com/85178695/191572844-fa072abe-c8b5-4c11-b1e3-a0d52275c119.png)
+
 * Navigation and Header Links
 * Default Delivery Information:
     * Phone Number

@@ -148,7 +148,7 @@ Desktop View
 
 #### Pexels
 
-The images for Aloe Vera, Peperomia Piccolo, Sansevieria, Zamioculcas, English Ivy, Fiddle Leaf Fig, Calathea, Tradescantia, Croton, Begonia Maculata, Yucca and Asparagus Fren were all found on Pexels
+The images for Aloe Vera, Peperomia Piccolo, Sansevieria, Zamioculcas, English Ivy, Fiddle Leaf Fig, Calathea, Tradescantia, Croton, Begonia Maculata, Yucca and Asparagus Fern were all found on Pexels
 
 <img src="media/3_Aloe_Vera.jpg" style="height:150px; width:150px;"><img src="media/4_Peperomia_Piccolo.jpg" style="height:150px; width:150px;"><img src="media/5_Sansevieria.jpg" style="height:150px; width:150px;"><img src="media/6_Zamioculcas.jpg" style="height:150px; width:150px;">
 
@@ -171,6 +171,12 @@ The images for Haworthia, Monstera, Ficus Benjamina, Jungle Orchid, Mini Orchid 
 <img src="media/1_Haworthia.jpg" style="height:150px; width:150px;"><img src="media/8_Monstera.jpg" style="height:150px; width:150px;"><img src="media/10_Ficus_Benjamina.jpg" style="height:150px; width:150px;"><img src="media/22_Jungle_Orchid.jpg" style="height:150px; width:150px;">
 
 <img src="media/23_Mini_Orchid.jpg" style="height:150px; width:150px;"><img src="media/homepage_background_cropped.jpg" style="height:150px; width:230px;">
+
+#### Pixabay
+
+The image for Peace Lily was found on Pixabay
+
+<img src="media/12_Peace_Lily.jpg" style="height:150px; width:150px;">
 
 
 #### Colours
@@ -677,8 +683,62 @@ os.environ["EMAIL_HOST_USER"] = "" Your email address
 
 ## Credits <a name="credits"></a>
 
+* **Pexels**
+    * bt3gl - Aloe Vera photo [here](https://www.pexels.com/photo/aloe-vera-plant-on-brown-clay-pot-5982611/)
+    * Ekaterina Bolovtsova - Mini Peperomia Piccolo photo [here](https://www.pexels.com/photo/green-plant-on-brown-clay-pot-9130870/)
+    * Charlotte May - Sansevieria photo [here](https://www.pexels.com/photo/sansevieria-in-pot-near-books-on-chest-of-drawers-5825581/)
+    * Lokesh Tiwari - Zamioculcas photo [here](https://www.pexels.com/photo/photo-plant-in-a-pot-8549167/)
+    * Kulbir - English Ivy photo [here](https://www.pexels.com/photo/photo-of-an-ivy-plant-in-a-white-pot-7365049/)
+    * Lachlan Ross - Fiddle Leaf Fig photo [here](https://www.pexels.com/photo/green-ficus-lyrata-on-table-7084309/)
+    * Nina Pintar - Calathea photo [here](https://www.pexels.com/photo/wood-relaxation-summer-pot-6754892/)
+    * Rachel Claire - Tradescantia photo [here](https://www.pexels.com/photo/green-potted-plant-on-wooden-shelf-4857756/)
+    * Max Vakhtbovych - Croton photo [here](https://www.pexels.com/photo/potted-codiaeum-variegatum-plant-placed-near-wardrobe-in-room-6508343/)
+    * Kulbir - Begonia Maculata photo [here](https://www.pexels.com/photo/close-up-shot-of-a-plant-in-white-pot-7493211/)
+    * Ata Ebem - Yucca photo [here](https://www.pexels.com/photo/yucca-plant-on-white-pot-11118532/)
+    * Ksenia Chernaya - Asparagus Fern photo [here](https://www.pexels.com/photo/green-fern-plant-on-white-pot-7149718/)
+
+* **Shutterstock**
+    * waskitokw - Miranda photo [here](https://www.shutterstock.com/image-photo/side-view-succulent-called-echeveria-agavoides-1879018693)
+    * TuktaBaby - Spider Plant photo [here](https://www.shutterstock.com/image-photo/spider-plant-chlorophytum-bichetii-karrer-backer-1670765764)
+    * Firn - Blue Star Fern photo [here](https://www.shutterstock.com/image-photo/tropical-phlebodium-aureum-blue-star-fern-1529766614)
+    * Berna Namoglu - Boston Fern photo [here](https://www.shutterstock.com/image-photo/nephrolepis-exaltata-beautiful-potted-ferns-green-2085224557)
+    * nikkimeel - Chamaedorea photo [here](https://www.shutterstock.com/image-photo/green-palm-chamaedorea-bamboo-pot-on-2031904922)
+    * Ingrid Liem - Peperomia Watermelon [here](https://www.shutterstock.com/image-photo/peperomia-watermelon-leaves-pot-bright-background-2154225531)
+    * Emily frost - Devil’s Ivy photo [here](https://www.shutterstock.com/image-photo/epipremnum-aureum-plant-golden-pothos-on-1757060777)
+    * Farhad Ibrahimzade - Flowering Begonia photo [here](https://www.shutterstock.com/image-photo/colorful-elatior-begonia-flower-plant-1381596731)
+
+
+* **Unsplash** 
+    * vadim kaipov - Homepage image [here](https://unsplash.com/photos/8ZELrodSvTc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)  
+    * Susan Jang - Haworthia photo [here](https://unsplash.com/photos/TQLSW8tfAU8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+    * Giorgio Marini - Monstera photo [here](https://unsplash.com/photos/ZUYzwHzUQgM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+    * feey - Ficus Benjamina photo [here](https://unsplash.com/photos/hPVWVpZoQJw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+    * Sanni Sahil - Jungle Orchid photo [here](https://unsplash.com/photos/yGt_7EcrLjc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+    * Pawel Czerwinski - Mini Orchid photo [here](https://unsplash.com/photos/LLBHaRrsA2Y?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
+* **Pixabay**
+    * mfiol - Peace Lily photo [here](https://pixabay.com/photos/plant-peace-lily-inside-white-1978269/)
+
+* **Code Institute** for the creating the gitpod-full-template and the Boutique Ado walkthrough project which this was based on
+
+* **The Little Botanical** was the main site I used for research and based my categories, products and prices on what they had on their site. I also wrote basic product descriptions from their plant information. [here](https://thelittlebotanical.com/ "Link to The Little Botanical site")
+
+* **Bunny The Compiler** Let’s build a movie review django app [here](https://blog.devgenius.io/lets-build-a-movie-review-django-app-47658f8e3751 "Link to Bunny the Compiler's Blog Page")
+
+* **Very Academy** Python Django Ecommerce Customer Wish List youtube video was helpfully when creating the wishlist [here](https://www.youtube.com/watch?v=OgA0TTKAtqQ "Link to Very Academy's youtube video")
+
+* **Python Package Index (PyPI)** django-review 1.10.0 documentation [here](https://pypi.org/project/django-review/ "Link to PyPI django-review 1.10.0 documentation")
+
+* **XML Sitemaps** used from creating the sitemap.xml [here](https://www.xml-sitemaps.com/ "Link to XML Sitemaps")
+
+* **Tables Generator** used to create markdown tables for the readme file [here](https://www.tablesgenerator.com/markdown_tables "Link to markdown table generator")
+
 [Back to top ⇧](#)
 
 ## Acknowledgements <a name="acknowledgements"></a>
+
+* Tutors and students of Code Institute and the Code Institute Slack Community for their helpfulness and assistance when needed.
+* Daisy McGirr my Code Institute mentor, thank you for all your help and support.
+
 
 [Back to top ⇧](#)

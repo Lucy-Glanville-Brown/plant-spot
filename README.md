@@ -2,7 +2,7 @@
 
 ## Portfolio Project 5 - Code Institute
 
-Plant Spot is a an eCommerce site aimed at anyone looking to find indoor plants that are suitable for ......
+Plant Spot is an eCommerce site for people of all ages and backgrounds who want to enhance their home or office space with plants. Indoor plants are currently on trend for their ability to bring a touch of nature inside, helping to purify the air and creating a calm, fresh atmosphere.
 
 This site is fictional and was built for education purposes and no orders will be fulfilled.
 
@@ -36,7 +36,6 @@ This site is fictional and was built for education purposes and no orders will b
 
 * As a Shopper I want to be able to View a list of products so that I can Select some to purchase
 * As a Shopper I want to be able to View individual product details so that I can Identify the price, description, product rating, product image and available sizes.
-* As a Shopper I want to be able to Quickly identify deals, clearance items and special offers so that I can Take advantage of special savings on products I'd like to purchase
 * As a Shopper I want to be able to Easily view the total of my purchases at any time so that I can Avoid spending too much
 * As a Site User I want to be able to Easily register for an account so that I can Have a personal account and be able to view my profile
 * As a Site User I want to be able to Easily login or logout so that I can Access my personal account information
@@ -45,7 +44,7 @@ This site is fictional and was built for education purposes and no orders will b
 * As a Site User I want to be able to Have a personalized user profile so that I can View my personal order history and order confirmations, and save my payment information
 * As a Shopper I want to be able to Sort the list of available products so that I can Easily identify the best rated, best priced and categorically sorted products
 * As a Shopper I want to be able to Sort a specific category of product so that I can Find the best-priced or best rated products in a specific category, or sort the products in that category name
-* As a Shopper I want to be able to Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as "clothing" or "homeware"
+* As a Shopper I want to be able to Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as "pet friendly" or "flowering"
 * As a Shopper I want to be able to Search for a product by name or description so that I can Find a specific product I'd like to purchase
 * As a Shopper I want to be able to Easily see what I've searched for and the number of results so that I can Quickly decide whether the product I want is available
 * As a Shopper I want to be able to View items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive
@@ -64,8 +63,7 @@ This site is fictional and was built for education purposes and no orders will b
 * As a Shopper I want to be able to Delete your review so that I can if I no longer want my review to be displayed
 * As a Site User I want to be able to Sign up for newsletter so that I can so I can be kept up to date with new products, deals and offers
 * As a Site User I want to be able to Follow on social media so that I can so I can be kept up to date with new products, deals and offers
-* As a Site User I want to be able to View Reviews and replies so that I can so I can decide if I would like to purchase the item
-
+* As a Site User I want to be able to Add/Remove items from a wishlist so that I can so I can decide if I would like to purchase the item
 
 
 I used GitHub Projects to create a Kanban board to manage the planning and implementation of the functionality I wanted to include in this project. Click [here](https://github.com/users/Lucy-Glanville-Brown/projects/5/views/2) to see my project board.
@@ -542,13 +540,54 @@ Each page of the website features a consistent responsive footer design:
 
 ### Future Features
 
+* Quick Add To Bag option on the All Products page to make adding to the shopping bag easier
+* Deals and Offers section
+* Option to comment on reviews
+* Add wishlist to the user's profile
+
 [Back to top ⇧](#)
 
 ## Marketing <a name="marketing"></a>
 
+### Business Model
+
+The business model used for the PlantSpot would be a B2C (Business to Customer), this is due to the business selling products directly to the customer through the platform. The target market for these products are people of all ages and backgrounds who want to enhance their home or office space with indoor plants.
+
+Customers who are buying products from PlantSpot should be able to:
+
+* Easily view and purchase plants from the site.
+* Easily navigate and search for products they wish to purchase.
+* Be able to subscribe for to a newsletter.
+
+### Search Engine Optimization
+
+**sitemap.xml**
+
+A sitemap was made to list the websites important URL's to ensure that search engines are able to easily navigate through the site and understand its structure. This was made using XML-sitemaps.com using the following steps:
+
+1. Paste the URL of the deployed site into XML-sitemaps.
+2. Download the XML sitemap file.
+3. Drag and drop this files into the projects root folder, and ensure it is labelled sitemap.xml
+
+**robots.txt***
+
+A robots.txt file was created to tell search engines where not to allowed go on the site and increase the quality of the site, ultimately improving the SEO rating. The following steps were taken to create this:
+1. A file was added named robots.txt.
+2. The following code was written into this file, adding in your personalised sitemap url:
+
+    ```
+    User-agent: *
+    Disallow:
+    Sitemap: YOUR_SITEMAP_URL
+    ```
+
 ### Facebook Page
 
 ![Plant Spot Facebook Page](https://user-images.githubusercontent.com/85178695/191124741-ee2c7b7a-9b18-4ec5-9336-902711908fef.png)
+
+### Email Subscription Service - Mail Chimp
+
+In the footer of the site there is a newsletter sign up form which the users can complete.
 
 
 [Back to top ⇧](#)

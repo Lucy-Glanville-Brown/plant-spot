@@ -329,5 +329,15 @@
 
 ## Bugs <a name="bugs"></a>
 
+* When you add an item to the wishlist the navbar icon will turn green but when you click on another page it goes back to black even though the item is still in the wishlist.
+
+![add to wishlist](https://user-images.githubusercontent.com/85178695/191630339-eaa7d313-0492-4475-8ddb-c5a0e12e6835.png)
+
+![wishlist item](https://user-images.githubusercontent.com/85178695/191630417-3ad304bc-04e4-46e9-aa9c-1ebc3f32f2a4.png)
+
+* The My Account dropdown menu goes off the screen on mobile devices
+
+![mobile user account dropdown](https://user-images.githubusercontent.com/85178695/191630706-1777f814-f596-44b4-81c0-f58e98d5f3a0.png)
+
 
 [Back to top ⇧](#)
